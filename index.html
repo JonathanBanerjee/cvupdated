@@ -7,7 +7,45 @@
     <title>Jonathan Banerjee</title>
 
     <style>
-      ul {
+      body {
+        background-color: #e0a458; /* Set the background color of the entire page */
+      }
+      .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #419d78;
+        color: #2d3047;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+      }
+      .header {
+        align-items: flex-end;
+        flex-wrap: wrap-reverse;
+      }
+      /*
+      .skills {
+        background-color: #a7a9be;
+      }
+
+      .education {
+        background-color: #a7a9be;
+      }
+
+      .certifications {
+        background-color: #a7a9be;
+      }
+      .experience {
+        background-color: #a7a9be;
+      }
+
+      .info {
+        background-color: #a7a9be;
+      } */
+
+      /* ul {
         margin: 0;
       }
       ul.dashed {
@@ -19,101 +57,107 @@
       ul.dashed > li:before {
         content: "-";
         text-indent: -20px;
-      }
+      } */
     </style>
   </head>
   <body>
-    <header>
-      <h1>Jonathan Banerjee</h1>
-      <h2>DevOps & Software Engineer</h2>
+    <div class="flex-container">
+      <div class="header">
+        <header>
+          <h1>Jonathan Banerjee</h1>
+          <h2>DevOps & Software Engineer</h2>
 
-      <fieldset>
-        <ul>
-          <li>📞 +44 (0) 74411 255 765</li>
-          <li>📧 jonathan.h.banerjee@gmail.com</li>
+          <ul>
+            <li>📞 +44 (0) 74411 255 765</li>
+            <li>📧 jonathan.h.banerjee@gmail.com</li>
+            <li>
+              🔗
+              <a href="https://www.linkedin.com/in/jonathanbanerjee"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              🐙 <a href="https://www.github.com/jonathanbanerjee ">Github</a>
+            </li>
+            <li>📍London</li>
+          </ul>
+        </header>
+      </div>
+
+      <div class="skills">
+        <h3>DevOps ENGINEERING SKILLS</h3>
+        <ul class="dashed">
+          <li>Languages and tools: Bash, Terraform, JavaScript</li>
           <li>
-            🔗
-            <a href="https://www.linkedin.com/in/jonathanbanerjee">LinkedIn</a>
+            Linux operating system: permissions, filesystem, processes, services
+          </li>
+          <li>Containers: Docker, Docker Compose, container networking</li>
+          <li>
+            Networking and Security: Fundamentals of cryptography, TCP/IP, SSH,
+            HTTP/HTTPS
           </li>
           <li>
-            🐙 <a href="https://www.github.com/jonathanbanerjee ">Github</a>
+            Cloud Computing: Experience with AWS: IAM, VPC, EC2 (instances, Auto
+            Scaling Groups, Load Balancing)
           </li>
-          <li>📍London</li>
+          <li>
+            Additional Skills: PostgreSQL; GIT; Buildkite; JIRA and Confluence;
+            HTML, CSS, Python; Notion
+          </li>
         </ul>
-      </fieldset>
-    </header>
-    <p></p>
-    <fieldset>
-      <legend>DEVOPS ENGINEERING SKILLS</legend>
-      <ul class="dashed">
-        <li>Languages and tools: Bash, Terraform, JavaScript</li>
-        <li>
-          Linux operating system: permissions, filesystem, processes, services
-        </li>
-        <li>Containers: Docker, Docker Compose, container networking</li>
-        <li>
-          Networking and Security: Fundamentals of cryptography, TCP/IP, SSH,
-          HTTP/HTTPS
-        </li>
-        <li>
-          Cloud Computing: Experience with AWS: IAM, VPC, EC2 (instances, Auto
-          Scaling Groups, Load Balancing)
-        </li>
-        <li>
-          Additional Skills: PostgreSQL; GIT; Buildkite; JIRA and Confluence;
-          HTML, CSS, Python; Notion
-        </li>
-      </ul>
-    </fieldset>
+      </div>
 
-    <fieldset>
-      <legend>EDUCATION</legend>
+      <div class="education">
+        <h3>Education</h3>
 
-      <h4>The Jump Digital School</h4>
-      <ul class="dashed">
-        <li>A 22-week programme of in-depth DevOps Engineering Training</li>
-      </ul>
-      (Sep 2022 - Mar 2023)
+        <h4>The Jump Digital School</h4>
+        <ul class="dashed">
+          <li>A 22-week programme of in-depth DevOps Engineering Training</li>
+        </ul>
+        (Sep 2022 - Mar 2023)
 
-      <h4>The Open University</h4>
-      <ul class="dashed">
-        <li>BSc (Hons) Computing and IT</li>
-      </ul>
-      (Sep 2017 - Oct 2021)
-    </fieldset>
+        <h4>The Open University</h4>
+        <ul class="dashed">
+          <li>BSc (Hons) Computing and IT</li>
+        </ul>
+        (Sep 2017 - Oct 2021)
+      </div>
 
-    <fieldset>
-      <legend>CERTIFICATIONS</legend>
-      <ul class="dashed">
-        <li>British Computing Society (BCS) DevOps Foundation Level</li>
-        <li>Amazon Web Services (AWS) Certified CloudPractitioner</li>
-        <li>NDX Linux Unhatched</li>
-      </ul>
-    </fieldset>
+      <div class="certifications">
+        <h3>Certifications</h3>
+        <ul class="dashed">
+          <li>British Computing Society (BCS) DevOps Foundation Level</li>
+          <li>Amazon Web Services (AWS) Certified CloudPractitioner</li>
+          <li>NDX Linux Unhatched</li>
+        </ul>
+      </div>
 
-    <fieldset>
-      <legend>PROFESSIONAL EXPERIENCE</legend>
-      <h4>Seedrs LTD, London Corporate IT Administrator</h4>
-      (Mar 2022 - present)<br />
-      <ul class="dashed">
-        <li>Automation including CI/CD pipelines on buildkite using bash</li>
-        <li>Updating wordpress blogs using Docker and git</li>
-        <li>
-          Slack workflow management for creating tickets on Kanban boards in
-          Jira and AWS CloudFormation.
-        </li>
-        <li>Define and deliver against IT Service Level Agreements (SLA’s)</li>
-      </ul>
-    </fieldset>
+      <div class="experience">
+        <h3>Professional Experience</h3>
+        <h4>Seedrs LTD, London Corporate IT Administrator</h4>
+        (Mar 2022 - present)<br />
+        <ul class="dashed">
+          <li>Automation including CI/CD pipelines on buildkite using bash</li>
+          <li>Updating wordpress blogs using Docker and git</li>
+          <li>
+            Slack workflow management for creating tickets on Kanban boards in
+            Jira and AWS CloudFormation.
+          </li>
+          <li>
+            Define and deliver against IT Service Level Agreements (SLA’s)
+          </li>
+        </ul>
+      </div>
 
-    <fieldset>
-      <legend>ADDITIONAL INFORMATION</legend>
-      <ul class="dashed">
-        <li>I have the right to work in the UK</li>
-        <li>Immediately available for interview</li>
-      </ul>
-    </fieldset>
+      <div class="info">
+        <h3>Additional Information</h3>
+        <ul class="dashed">
+          <li>I have the right to work in the UK</li>
+          <li>Immediately available for interview</li>
+        </ul>
+      </div>
 
-    <p><small>&copy; All rights reserved</small></p>
+      <p><small>&copy; All rights reserved</small></p>
+    </div>
   </body>
 </html>
