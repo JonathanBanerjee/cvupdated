@@ -6,8 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonathan Banerjee</title>
     <style>
+      @font-face {
+        font-family: assistant;
+        src: url(./assistant.woff2);
+      }
+
+      html {
+        font-size: 62.5%;
+        font-family: assistant;
+      }
+
+      @media (min-width: 600px) {
+        .flex-container {
+          flex-direction: row;
+        }
+      }
+
+      @media (min-width: 800px) {
+        .flex-container {
+          font-size: 1.8rem;
+        }
+        @media (min-width: 1200px) {
+          .flex-container {
+            font-size: 3rem;
+          }
+        }
+      }
+
       body {
-        background-color: #e0a458; /* Set the background color of the entire page */
+        background-color: #e0a458;
       }
       .flex-container {
         display: flex;
