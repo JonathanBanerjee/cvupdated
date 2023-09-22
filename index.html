@@ -45,8 +45,10 @@
 
       .links {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-evenly;
         color: #e0a458;
+        position: relative;
+        animation: logos 5s;
       }
 
       @media (min-width: 600px) {
@@ -80,6 +82,15 @@
         }
         body {
           background-color: #419d78;
+        }
+      }
+
+      @keyframes logos {
+        from {
+          left: 1000px;
+        }
+        to {
+          left: 0px;
         }
       }
     </style>
