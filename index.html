@@ -4,108 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Jonathan Banerjee</title>
-    <style>
-      @font-face {
-        font-family: assistant;
-        src: url(./assistant.woff2);
-      }
-
-      html {
-        font-size: 62.5%;
-        font-family: assistant;
-      }
-
-      body {
-        background-color: #e0a458;
-      }
-      .flex-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        background-color: #419d78;
-        color: #2d3047;
-        border: 2px solid black;
-        margin: 20px;
-        padding: 20px;
-        text-align: center;
-        border-radius: 100px;
-      }
-      .header {
-        align-items: flex-end;
-        flex-wrap: wrap-reverse;
-      }
-
-      .profile {
-        border-radius: 50%;
-      }
-      img {
-        border-radius: inherit;
-      }
-
-      .links {
-        display: flex;
-        justify-content: space-evenly;
-        color: #e0a458;
-        position: relative;
-        animation: logos 5s;
-      }
-
-      @media (min-width: 350px) {
-        .flex-container {
-          flex-direction: row;
-        }
-        .links img {
-          width: 50px;
-          height: 50px;
-        }
-      }
-
-      @media (min-width: 800px) {
-        .flex-container {
-          font-size: 1.8rem;
-        }
-
-        .links img {
-          width: 100px;
-          height: 100px;
-        }
-      }
-      @media (min-width: 1200px) {
-        .flex-container {
-          font-size: 3rem;
-        }
-        .links img {
-          width: 200px;
-          height: 200px;
-        }
-      }
-
-      @media (prefers-color-scheme: dark) {
-        .flex-container {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          background-color: #2d3047;
-          color: #e0a458;
-          margin: 20px;
-          padding: 20px;
-          text-align: center;
-        }
-        body {
-          background-color: #419d78;
-        }
-      }
-
-      @keyframes logos {
-        from {
-          left: 1000px;
-        }
-        to {
-          left: 0px;
-        }
-      }
-    </style>
   </head>
   <body>
     <div class="flex-container">
@@ -146,62 +46,64 @@
           <p>📍London</p>
         </header>
       </div>
+      <div class="container">
+        <div class="card skills">
+          <h3>DevOps Engineering Skills</h3>
+          <p>
+            Languages and tools: Bash, Terraform, JavaScript<br />
+            Linux operating system: permissions, filesystem, processes,
+            services<br />
+            Containers: Docker, Docker Compose, container networking<br />
+            Networking and Security: Fundamentals of cryptography, TCP/IP, SSH,
+            HTTP/HTTPS<br />
+            Cloud Computing: Experience with AWS: IAM, VPC, EC2 (instances, Auto
+            Scaling Groups, Load Balancing)<br />
+            Additional Skills: PostgreSQL; GIT; Buildkite; JIRA and Confluence;
+            HTML, CSS, Python; Notion
+          </p>
+        </div>
 
-      <div class="skills">
-        <h3>DevOps Engineering Skills</h3>
-        <p>
-          Languages and tools: Bash, Terraform, JavaScript<br />
-          Linux operating system: permissions, filesystem, processes,
-          services<br />
-          Containers: Docker, Docker Compose, container networking<br />
-          Networking and Security: Fundamentals of cryptography, TCP/IP, SSH,
-          HTTP/HTTPS<br />
-          Cloud Computing: Experience with AWS: IAM, VPC, EC2 (instances, Auto
-          Scaling Groups, Load Balancing)<br />
-          Additional Skills: PostgreSQL; GIT; Buildkite; JIRA and Confluence;
-          HTML, CSS, Python; Notion
-        </p>
-      </div>
+        <div class="col">
+          <div class="card education">
+            <h3>Education</h3>
+            <h4>The Jump Digital School</h4>
+            <p>A 22-week programme of in-depth DevOps Engineering Training</p>
+            (Sep 2022 - Mar 2023)
 
-      <div class="education">
-        <h3>Education</h3>
-        <h4>The Jump Digital School</h4>
-        <p>A 22-week programme of in-depth DevOps Engineering Training</p>
-        (Sep 2022 - Mar 2023)
+            <h4>The Open University</h4>
+            <p>BSc (Hons) Computing and IT</p>
+            (Sep 2017 - Oct 2021)
+          </div>
 
-        <h4>The Open University</h4>
-        <p>BSc (Hons) Computing and IT</p>
-        (Sep 2017 - Oct 2021)
-      </div>
+          <div class="card certifications">
+            <h3>Certifications</h3>
+            <p>
+              British Computing Society (BCS) DevOps Foundation Level<br />
+              Amazon Web Services (AWS) Certified CloudPractitioner<br />
+              NDX Linux Unhatched
+            </p>
+          </div>
+          <div class="card info">
+            <h3>Additional Information</h3>
+            <p>
+              I have the right to work in the UK<br />
+              Immediately available for interview
+            </p>
+          </div>
+        </div>
 
-      <div class="certifications">
-        <h3>Certifications</h3>
-        <p>
-          British Computing Society (BCS) DevOps Foundation Level<br />
-          Amazon Web Services (AWS) Certified CloudPractitioner<br />
-          NDX Linux Unhatched
-        </p>
-      </div>
-
-      <div class="experience">
-        <h3>Professional Experience</h3>
-        <h4>Seedrs LTD, London Corporate IT Administrator</h4>
-        (Mar 2022 - present)<br />
-        <p>
-          Automation including CI/CD pipelines on buildkite using bash<br />
-          Updating wordpress blogs using Docker and git<br />
-          Slack workflow management for creating tickets on Kanban boards in
-          Jira and AWS CloudFormation.<br />
-          Define and deliver against IT Service Level Agreements (SLA’s)
-        </p>
-      </div>
-
-      <div class="info">
-        <h3>Additional Information</h3>
-        <p>
-          I have the right to work in the UK<br />
-          Immediately available for interview
-        </p>
+        <div class="card experience">
+          <h3>Professional Experience</h3>
+          <h4>Seedrs LTD, London Corporate IT Administrator</h4>
+          (Mar 2022 - present)<br />
+          <p>
+            Automation including CI/CD pipelines on buildkite using bash<br />
+            Updating wordpress blogs using Docker and git<br />
+            Slack workflow management for creating tickets on Kanban boards in
+            Jira and AWS CloudFormation.<br />
+            Define and deliver against IT Service Level Agreements (SLA’s)
+          </p>
+        </div>
       </div>
 
       <p><small>&copy; Jonathan Banerjee 2023 All rights reserved</small></p>
