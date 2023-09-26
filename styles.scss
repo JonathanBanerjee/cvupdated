@@ -1,22 +1,20 @@
 // Line up the selectors (e.g. the colours).
 
 // @font-face {
-//   font-family: assistant;
-//   src: url(./assistant.woff2);
+
 // }
 
 // html {
-//   font-size: 62.5%;
-//   font-family: assistant;
+
 // }
 
 // body {
 //   background-color: #e0a458;
 // }
-
-.header a {
-  font-size: 10px;
+.h3 {
+  font-size: 20px;
 }
+
 .flex-container {
   //   display: flex;
   justify-content: center;
@@ -63,6 +61,10 @@ img {
     width: 50px;
     height: 50px;
   }
+
+  .header a {
+    font-size: 10px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -74,6 +76,9 @@ img {
     width: 100px;
     height: 100px;
   }
+  .header a {
+    font-size: 13px;
+  }
 }
 @media (min-width: 1200px) {
   .flex-container {
@@ -82,6 +87,9 @@ img {
   .links img {
     width: 200px;
     height: 200px;
+  }
+  .header a {
+    font-size: 15px;
   }
 }
 
@@ -110,6 +118,10 @@ img {
   .card {
     margin: 24px;
   }
+
+  .header a {
+    font-size: 20px;
+  }
 }
 
 @keyframes logos {
@@ -127,8 +139,14 @@ $supervisorcolor: hsl(180, 62%, 55%);
 $karmacolor: hsl(34, 97%, 64%);
 
 %sharedfont {
-  color: #4d4f62;
-  font-family: Poppins, "Courier New", Courier, monospace;
+  //   color: #4d4f62;
+  //   font-family: Poppins, "Courier New", Courier, monospace;
+  font-family: assistant;
+  src: url(./assistant.woff2);
+  font-size: 62.5%;
+  font-family: assistant;
+  //   font-family: assistant;
+  //   src: url(./assistant.woff2);
 }
 
 @mixin borders($color1, $color2) {
