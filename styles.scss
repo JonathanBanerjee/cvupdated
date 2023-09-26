@@ -150,8 +150,9 @@ $karmacolor: hsl(34, 97%, 64%);
 }
 
 @mixin borders($color1, $color2) {
-  border-top: 4px solid $color1;
-  border-bottom: 4px solid $color2;
+  border: 4px solid $color1;
+  border: 4px solid $color2;
+  border-style: inset;
 }
 
 @mixin cards {

@@ -135,28 +135,33 @@ header p {
 }
 
 .skills {
-  border-top: 4px solid hsl(180deg, 62%, 55%);
-  border-bottom: 4px solid hsl(180deg, 62%, 55%);
+  border: 4px solid hsl(180deg, 62%, 55%);
+  border: 4px solid hsl(180deg, 62%, 55%);
+  border-style: inset;
 }
 
 .education {
-  border-top: 4px solid hsl(34deg, 97%, 64%);
-  border-bottom: 4px solid hsl(34deg, 97%, 64%);
+  border: 4px solid hsl(34deg, 97%, 64%);
+  border: 4px solid hsl(34deg, 97%, 64%);
+  border-style: inset;
 }
 
 .certifications {
-  border-top: 4px solid hsl(212deg, 86%, 64%);
-  border-bottom: 4px solid hsl(212deg, 86%, 64%);
+  border: 4px solid hsl(212deg, 86%, 64%);
+  border: 4px solid hsl(212deg, 86%, 64%);
+  border-style: inset;
 }
 
 .experience {
-  border-top: 4px solid hsl(0deg, 78%, 62%);
-  border-bottom: 4px solid hsl(0deg, 78%, 62%);
+  border: 4px solid hsl(0deg, 78%, 62%);
+  border: 4px solid hsl(0deg, 78%, 62%);
+  border-style: inset;
 }
 
 .info {
-  border-top: 4px solid hsl(0deg, 78%, 62%);
-  border-bottom: 4px solid hsl(0deg, 78%, 62%);
+  border: 4px solid hsl(0deg, 78%, 62%);
+  border: 4px solid hsl(0deg, 78%, 62%);
+  border-style: inset;
 }
 
 header {
